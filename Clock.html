@@ -11,15 +11,10 @@
     <h3>LET'S START THE COUNTDOWN</h3>
 </div>
 <div class="content" id="Form">
-    Year: <input type="number" maxlength="4" id="year"><br>
-    Month: <input type="number" maxlength="2" id="month" min="1" max="12"><br>
-    Day: <input type="number" maxlength="2" id="day" min="1" max="31"><br>
-    Hour: <input type="number" maxlength="2" id="hour" min="0" max="23"><br>
-    Minutes: <input type="number" maxlength="2" id="minute" min="0" max="60"><br>
-    Seconds: <input type="number" maxlength="2" id="sec" min="0" max="60"><br>
+<h3>Podaj date </h3><input type="date" id="date">
 </div>
 <div class="content" id="countDown">
-    <button onclick="main()">LETS GET THIS STARTED</button>
+    <button onclick="javascript:clearInterval(countDown),main()">LETS GET THIS STARTED</button>
     <table>
         <tr>
             <td>
