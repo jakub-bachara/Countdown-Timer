@@ -5,32 +5,47 @@
     <title>Odliczanie</title>
     <link rel="Stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="header">
-    <h3>LET'S START THE COUNTDOWN</h3>
+    <h3>IT'S THE FINAL COUNTDOWN</h3>
 </div>
 <div class="content" id="Form">
-<h3>Podaj date </h3><input type="date" id="date">
+<h3>Enter date to countdown </h3><input type="date" id="date">
 </div>
 <div class="content" id="countDown">
-    <button onclick="javascript:clearInterval(countDown),main()">LETS GET THIS STARTED</button>
+    <button id="start">START</button>
+    <button id="stop">Wait...</button>
     <table>
         <tr>
             <td>
-            <p id="dni"> </p>    
+            <p id="dni">D</p>    
             </td>
+            <td><p>:</p></td>
             <td>
-            <p id="godziny"> </p>
+            <p id="godziny">O</p>
             </td>
+            <td><p>:</p></td>
             <td>
-            <p id="minuty"> </p>
+            <p id="minuty">N</p>
             </td>
+            <td><p>:</p></td>
             <td>
-            <p id="sekundy"> </p>
+            <p id="sekundy">E</p>
             </td>
         </tr>
     </table>
 </div>
+<script>
+    $('#start').click(function(){
+        start();
+    });
+    $('#stop').click(function(){
+        stop();
+    });
+    var interval=1;
+</script>
 </body>
 </html>
