@@ -1,4 +1,6 @@
 body {
+    font-family: 'Rowdies', cursive;
+    background-color: aquamarine;
     text-align: center;
 }
 .header{
@@ -14,7 +16,7 @@ table {
 }
 td{
     border-bottom: solid 1px grey;
-    width:120px;
-    height:120px;
-    font-size:40px;
+    width:90px;
+    height:90px;
+    font-size:35px;
 }
